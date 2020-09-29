@@ -4,7 +4,7 @@
     new
 函数protected
     sbclearform 继承父类的
-    sbtsmtoinputmode_local 调用sbtsmrecordUNlockperRecordLogi
+    sbtsmtoinputmode_local  清空控件前的操作，调用sbtsmrecordUNlockperRecordLogi
     fnbTSMF2Click_Local 接到codecopy传回的code 判断fnbSetData，如果没有进入输入模式
     sbF9Click_Local 放弃更改 fnbSetData
     增删改操作
