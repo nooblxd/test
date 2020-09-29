@@ -1,0 +1,37 @@
+变量
+    linkagetsm580
+构造函数
+    new
+函数protected
+    sbclearform 继承父类的
+    sbtsmtoinputmode_local 调用sbtsmrecordUNlockperRecordLogi
+    fnbTSMF2Click_Local 接到codecopy传回的code 判断fnbSetData，如果没有进入输入模式
+    sbF9Click_Local 放弃更改 fnbSetData
+    增删改操作
+    sbTSMDataInsert  设置linkage模式，调用WsSetData
+    sbTSMDataUpdate 设置linkage模式 ，调用WsSetData
+    sbTSMDataDelete 设置linkage模式 ，调用WsSetData
+
+    sbTSMSetFormToDataSet 清空linkage 调用sbSetFormToDataSetTM414'
+    sbSetControlEnabled 根据模式设定画面
+
+    fnbTSMCheckInput 检查输入
+    fnbTSMF7Click_CheckInput F7时检查输入 总是返回True
+
+    fnobjTSMRecordLockLogi_Local 排他制御
+    sbTSMRecordUnLockperRecordLogi_Local 排他制御解除
+函数private 
+    sbInitialize 初始化 设置codecopyID 及按键 切换到input模式
+    EventFormLoad Handles Me.Load 界面加载时的事件 调用sbFormLoad
+    EventFormClosed Handles Me.Closed 界面关闭时的事件 调用sbFormClosed 排他制御解除
+
+    fnbSetData 清空linkage 读入控件检索key 设置linkage sbSetDataSetToForm() 切换到更新模式 排他制御
+    sbSetDataSetToForm 调用sbSetDataSetToFormTM414
+    sbSetFormToDataSetTM414 判定模式 新规还是更新 添加信息 获取控件到ref
+    sbChangeEnabledCommon(Boolean) 设定输入可否
+    fnbErrorCheckSave 输入检查
+
+    WebService 
+    WsGetData(linkage)
+    WsSetData(linkage)
+
