@@ -34,4 +34,8 @@
     WebService 
     WsGetData(linkage)
     WsSetData(linkage)
+    WsDeleteData(linkage) --删除
+
+    事件
+    txtCountryCd.Validating 没找到进入新规模式 非读取模式下，找到了进入更新模式，锁定文本框
 
